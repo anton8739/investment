@@ -7,4 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Test Action"
+      - name: Install dependencies
+        working-directory: ./frontend
+        run: npm install
+      - name: Create bundle
+        working-directory: ./frontend
+        run: npm run build
