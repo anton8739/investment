@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./frontend
           push: true
-          tags: investment/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/investment:latest
