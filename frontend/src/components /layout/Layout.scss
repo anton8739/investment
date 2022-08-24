@@ -1,0 +1,31 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+
+  .header {
+    height: 50px;
+    background: #61dafb;
+  }
+
+  .body {
+    flex: 1;
+    background: yellow;
+    display: flex;
+    .side-bar {
+      .side-bar-menu {
+        height: 100%;
+      }
+    }
+    .content {
+      flex: 1;
+      background: rebeccapurple;
+    }
+  }
+
+  .footer {
+    height: 50px;
+    background: #61dafb;
+  }
+}

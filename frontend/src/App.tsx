@@ -1,10 +1,10 @@
-
-import './App.scss';
-
+import 'normalize.css';
+import './styles/App.scss';
+import Layout from "./components /layout/Layout";
 function App() {
   return (
     <div className="App">
-        Hello
+        <Layout/>
     </div>
   );
 }
