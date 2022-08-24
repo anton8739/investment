@@ -1,17 +1,16 @@
+@import "src/styles/variables";
 .layout {
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-
+  max-width: 1440px;
   .header {
     height: 50px;
-    background: #61dafb;
+    background: $color_dark_blue3;
   }
-
   .body {
     flex: 1;
-    background: yellow;
     display: flex;
     .side-bar {
       .side-bar-menu {
@@ -20,12 +19,13 @@
     }
     .content {
       flex: 1;
-      background: rebeccapurple;
+
+      padding: 20px 50px 20px 50px;
     }
   }
 
   .footer {
     height: 50px;
-    background: #61dafb;
+    background: $color_dark_blue3;
   }
 }

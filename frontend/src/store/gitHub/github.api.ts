@@ -12,7 +12,8 @@ export const githubApi = createApi({
             query : search => ({
                 url : 'search/users',
                 params : {
-                    q : search
+                    q : search,
+                    per_page : 5,
                 }
             }),
             transformResponse : (response:ServerResponse<IUser>) => response.items
